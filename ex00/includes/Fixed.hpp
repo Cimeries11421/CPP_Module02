@@ -8,7 +8,7 @@ class	Fixed
 	private:
 	
 	int	_nbr;
-	const static int _csNbr;
+	const static int _fractionalPart = 8;
 
 	public:
 
