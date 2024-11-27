@@ -27,11 +27,11 @@ class	Fixed
 	float	toFloat(void) const;
 
 //operator overloaded
-
-	float	operator+(Fixed other) const;
-	float	operator-(Fixed other) const;
-	float	operator*(Fixed other) const;
-	float	operator/(Fixed other) const;
+//
+	Fixed	operator+(Fixed other) const;
+	Fixed	operator-(Fixed other) const;
+	Fixed	operator*(Fixed other) const;
+	Fixed	operator/(Fixed other) const;
 
 	bool	operator>(Fixed other) const;
 	bool	operator<(Fixed other) const;

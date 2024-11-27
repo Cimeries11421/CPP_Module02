@@ -49,29 +49,46 @@ float	Fixed::toFloat(void) const
 }
 
 
-
-
 //operators overloaded
 
-float	Fixed::operator+(Fixed other) const
+
+
+
+Fixed	Fixed::operator+(Fixed other) const
 {
-	return (this->toFloat() + other.toFloat());	 	
+	Fixed	FixNbr;
+	
+	FixNbr.setRawBits(this->_nbr + other._nbr);
+	return (FixNbr);	 	
+}
+Fixed	Fixed::operator-(Fixed other) const {
+	Fixed	FixNbr;
+	
+	FixNbr.setRawBits(this->_nbr - other._nbr);
+	return (FixNbr);	 	
 }
 
-float	Fixed::operator-(Fixed other) const
+Fixed	Fixed::operator*(Fixed other) const
 {
-	return (this->toFloat() - other.toFloat());	 	
+	Fixed	FixNbr;
+	long int	tmpNbr = this->_nbr;
+	long int	tmpOther = other._nbr;	
+	
+	FixNbr.setRawBits((tmpNbr * tmpOther) << _FractionalPart);
+	return (FixNbr);	 	
 }
 
-float	Fixed::operator*(Fixed other) const
+Fixed	Fixed::operator/(Fixed other) const
 {
-	return (this->toFloat() * other.toFloat());	 	
+	Fixed	FixNbr;
+	long int	tmpNbr = this->_nbr;
+	long int	tmpOther = other._nbr;	
+	
+	FixNbr.setRawBits((tmpNbr << _FractionalPart) / tmpOther);
+	return (FixNbr);	 	
 }
 
-float	Fixed::operator/(Fixed other) const
-{
-	return (this->toFloat() / other.toFloat());	 	
-}
+
 
 bool	Fixed::operator>(Fixed other) const
 {
