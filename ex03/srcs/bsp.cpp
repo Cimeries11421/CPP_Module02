@@ -3,12 +3,12 @@
 
 static Fixed	getArea(Point const a, Point const b, Point const c)
 {
-/*	Fixed Area = Fixed(0.5f) * (a.getFixed_x() * (b.getFixed_y() - c.getFixed_y())
+	Fixed Area = Fixed(0.5f) * (a.getFixed_x() * (b.getFixed_y() - c.getFixed_y())
 							+ b.getFixed_x() * (c.getFixed_y() - a.getFixed_y())
-							+ c.getFixed_x() * (a.getFixed_y() - b.getFixed_y()));*/
+							+ c.getFixed_x() * (a.getFixed_y() - b.getFixed_y()));
 
-	Fixed Area = a.getFixed_x() / b.getFixed_x();
-	std::cout << Area << std::endl; 
+//	Fixed Area = a.getFixed_x() / b.getFixed_x();
+//	std::cout << Area << std::endl; 
 	return (Area);
 }
 

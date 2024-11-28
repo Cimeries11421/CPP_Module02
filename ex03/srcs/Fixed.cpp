@@ -73,8 +73,8 @@ Fixed	Fixed::operator*(Fixed other) const
 	long int	tmpNbr = this->_nbr;
 	long int	tmpOther = other._nbr;	
 	
-	//FixNbr.setRawBits((tmpNbr * tmpOther) << _FractionalPart);
-	FixNbr.setRawBits((tmpNbr * tmpOther) / 256); //(1 >> _FractionalPart));
+	FixNbr.setRawBits((tmpNbr * tmpOther) >> _FractionalPart);
+	//FixNbr.setRawBits((tmpNbr * tmpOther) / 256); //(1 >> _FractionalPart));
 	return (FixNbr);	 	
 }
 

@@ -12,13 +12,11 @@ int main (void)
 	std::cout << "B : (x = " << B.getFixed_x() << ", y = " << B.getFixed_y() << ") "<< std::endl;
 	std::cout << "C : (x = " << C.getFixed_x() << ", y = " << C.getFixed_y() << ") "<< std::endl;
 	std::cout << "point : (x = " << point.getFixed_x() << ", y = " << point.getFixed_y() << ") \n"<< std::endl;
-/*	if (bsp(A, B, C, point) == true)
+	if (bsp(A, B, C, point) == true)
 		std::cout << "True : The point is in the triangle" << std::endl;
 	else
-		std::cout << "False : The point is not in the triangle" << std::endl;*/
-
-
-	std::cout << (Fixed(5) * Fixed(2)) << std::endl;
-	std::cout << (Fixed(0.5f) / Fixed(2)) << std::endl;
+		std::cout << "False : The point is not in the triangle" << std::endl;
+//	std::cout << (Fixed(5) * Fixed(2)) << std::endl;
+//	std::cout << (Fixed(0.5f) / Fixed(2)) << std::endl;
 	return (0);
 } 
