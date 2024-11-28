@@ -3,7 +3,7 @@
 
 int main (void) 
 {
-	/Point	A(Fixed(5), Fixed(5));
+	Point	A(Fixed(5), Fixed(5));
 	Point	B(Fixed(6), Fixed(3));
 	Point	C(Fixed(1), Fixed(2));
 	Point	point(Fixed(4), Fixed(3));
