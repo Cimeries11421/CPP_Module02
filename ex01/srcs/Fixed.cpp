@@ -5,11 +5,6 @@ Fixed::Fixed() : _nbr(0)
 	std::cout << "Default constructor called" << std::endl;
 }
 
-/*Fixed::Fixed(int const nbr) : _nbr(nbr) 
-{
-	std::cout << "Parametric constructor called" << std::endl;
-}*/
-
 Fixed::Fixed(const int nbr)
 {
 	std::cout << "Int constructor called" << std::endl;
