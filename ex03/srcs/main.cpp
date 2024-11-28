@@ -23,9 +23,9 @@ int main (void)
 	//-----------------------------------------------------------------------//
 	
 	Point A(Fixed(2), Fixed(2));
-	Point B(Fixed(2), Fixed(8.2f));
+	Point B(Fixed(2), Fixed(5));
 	Point C(Fixed(6), Fixed(3));
-	Point point (Fixed(2.4f), Fixed(3.5f));
+	Point point (Fixed(2.2f), Fixed(4));
 
 	std::cout << "A : (x = " << A.getFixed_x() << ", y = " << A.getFixed_y() << ") "<< std::endl;
 	std::cout << "B : (x = " << B.getFixed_x() << ", y = " << B.getFixed_y() << ") "<< std::endl;
